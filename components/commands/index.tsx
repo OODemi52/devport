@@ -1,3 +1,5 @@
+"use client";
+
 import Whoami from "./Whoami";
 import Whois from "./Whois";
 import Education from "./Education";
