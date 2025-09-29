@@ -1,0 +1,81 @@
+.terminal-prompt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  white-space: pre-wrap; /* Allow text to wrap */
+  word-break: break-word;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.normalwrap {
+  white-space: normal;
+}
+
+.preWhiteSpace {
+  white-space: pre;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+input {
+  appearance: none;
+  border: transparent;
+  outline: transparent;
+  caret-color: #fc8a68;
+  caret-shape: block;
+  color: transparent;
+  background: transparent;
+}
+
+input::selection {
+  background-color: transparent;
+}
+
+
+.caret {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  animation: blink 1s steps(1, end) infinite;
+}
+
+.caretAfter {
+  content: "";
+  position: absolute;
+  top: 4px;
+  width: 10px;
+  height: 22px;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+input::selection {
+  background-color: transparent;
+}
+
+.command_input {
+  position: relative;
+  display: inline;
+}
+
+.character-caret {
+  background-color: #fc8a68;
+  animation: blink 0.75s ease-in-out infinite;
+}

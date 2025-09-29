@@ -1,0 +1,50 @@
+import React from "react";
+
+const Help: React.FC = () => {
+  const command = {
+    whoami: "Who you are",
+    whois: "All about me",
+    education: "View my education",
+    projects: "View my coding projects",
+    resume: "View my resume (pdf in new tab)",
+    socials: "Display my social media accounts",
+    contact: "Feel free to shoot me an email!",
+    history: "View command history",
+    help: "List all commands",
+    clear: "Clear the terminal",
+    banner: "Display the welcome message and banner",
+  };
+
+  return (
+    <div>
+      {Object.entries(command).map(([name, description]) => (
+        <p key={name}>
+          <span className="command">{name}</span> - <span>{description}</span>
+          <br />
+        </p>
+      ))}
+      <br />
+      <div className="hidden md:block">
+        <p className="inline">
+          <span className="message underline">Keyboard shortcuts:</span>
+        </p>
+        <br />
+        <p className="inline">
+          <span className="message">Up Arrow (↑):</span> Go to the previoues
+          command.
+        </p>
+        <br />
+        <p className="inline">
+          <span className="message">Down Arrow (↓):</span> Go to the next
+          command.
+        </p>
+        <br />
+        <p className="inline">
+          <span className="message">Tab (⇥):</span> Autocomplete the command.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Help;
