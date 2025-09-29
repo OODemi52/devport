@@ -1,7 +1,5 @@
 "use client";
 
-import "../styles/History.css";
-
 const History: React.FC<{ historyArray: string[] }> = ({ historyArray }) => {
   return (
     <>

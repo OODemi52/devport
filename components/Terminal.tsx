@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Fragment } from "react";
 import TerminalPrompt from "./TerminalPrompt";
 import CommandRouter from "./CommandRouter";
 import { Banner } from "./commands";
@@ -63,7 +63,7 @@ const Terminal: React.FC = () => {
   return (
     <div className="terminal-container">
       {initialBannerRender.map((node, index) => (
-        <React.Fragment key={index}>{node}</React.Fragment>
+        <Fragment key={index}>{node}</Fragment>
       ))}
       {promptHistory.map((prompt, index) => (
         <div key={index}>

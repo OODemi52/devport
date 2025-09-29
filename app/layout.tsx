@@ -11,12 +11,16 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#2b2031" },
+    { media: "(prefers-color-scheme: dark)", color: "#2b2031" },
+  ],
 };
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: "(prefers-color-scheme: light)", color: "#2b2031" },
+    { media: "(prefers-color-scheme: dark)", color: "#2b2031" },
   ],
 };
 

@@ -1,7 +1,5 @@
 "use client";
 
-import "../styles/Help.css";
-
 const Help: React.FC = () => {
   const command = {
     whoami: "Who you are",

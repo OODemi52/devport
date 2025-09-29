@@ -1,7 +1,5 @@
 "use client";
 
-import "../styles/Banner.css";
-
 const Banner: React.FC = () => {
   return (
     <>
