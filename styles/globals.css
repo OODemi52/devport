@@ -1,3 +1,162 @@
 @import "tailwindcss";
 
-@config "../tailwind.config.js"
+@config "../tailwind.config.js";
+
+:root {
+  background-color: #2b2031;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 20px;
+  color: #ab4eda;
+}
+
+.prompt {
+  color: #fc8a68;
+}
+
+.command {
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.message {
+  color: #ffddfd;
+}
+
+.info {
+  color: #ab4eda;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 1px #fc8a68,
+      0 0 2px #fc8a68,
+      0 0 7px #fc8a68;
+  }
+  to {
+    text-shadow:
+      0 0 3px #fc8a68,
+      0 0 4px #fc8a68,
+      0 0 9px #fc8a68;
+  }
+}
+
+#root {
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.typed-out {
+  white-space: wrap;
+  animation: typing 0s forwards;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.asciiArt {
+  font-size: 5px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.letters {
+  font-size: 15px;
+  align-self: center;
+}
+
+.ascii-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .letters {
+    font-size: 8px;
+  }
+
+  .asciiArt {
+    font-size: 4px;
+  }
+
+  .ascii-wrapper {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.terminal-prompt {
+  display: flex;
+  align-items: baseline;
+}
+
+@media (max-width: 768px) {
+  .terminal-prompt {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.normalwrap {
+  white-space: normal;
+}
+
+.blinking-caret {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  animation: blink 0.75s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    background: #fc8a68;
+    color: inherit;
+  }
+}
+
+input {
+  appearance: transparent;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+  color: transparent;
+  background: transparent;
+}
+
+input::selection {
+  background-color: transparent;
+}
