@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Help.css";
 
 const Help: React.FC = () => {
   const command = {
@@ -23,26 +24,14 @@ const Help: React.FC = () => {
           <br />
         </p>
       ))}
-      <br />
-      <div className="hidden md:block">
-        <p className="inline">
-          <span className="message underline">Keyboard shortcuts:</span>
-        </p>
+      <p>
+        <span className="message">Keyboard shortcuts:</span>
         <br />
-        <p className="inline">
-          <span className="message">Up Arrow (↑):</span> Go to the previoues
-          command.
-        </p>
+        <span className="message">Up Arrow (↑):</span> Go to the previous
+        command.
         <br />
-        <p className="inline">
-          <span className="message">Down Arrow (↓):</span> Go to the next
-          command.
-        </p>
-        <br />
-        <p className="inline">
-          <span className="message">Tab (⇥):</span> Autocomplete the command.
-        </p>
-      </div>
+        <span className="message">Down Arrow (↓):</span> Go to the next command.
+      </p>
     </div>
   );
 };

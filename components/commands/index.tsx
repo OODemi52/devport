@@ -1,6 +1,3 @@
-// This file is solely for routing the importing of commmands to simplyfy command
-// imports in the CommandRouter.tsx file.
-
 import Whoami from "./Whoami";
 import Whois from "./Whois";
 import Education from "./Education";

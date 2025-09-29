@@ -15,15 +15,15 @@ const Whois: React.FC = () => {
           APIs, and Microservices.
         </p>
         <p>
-          I&apos;m highly skilled in both front-end and back-end development,
-          with a with a background in Mechanical Engineering. I love crafting
-          intuitive interfaces and optimizing server-side operations to enhance
-          overall user experience.
+          I'm highly skilled in both front-end and back-end development, with a
+          background in Mechanical Engineering. I love crafting intuitive user
+          interfaces and optimizing server-side operations to enhance overall
+          user experience.
         </p>
         <p>
           In my current role as a Full Stack Developer at R.C.C.G. Christ Chapel
-          MD, I&apos;ve contributed to the improvement of existing web services,
-          as well as spearheaded efforts in creating applications and practices
+          MD, I've contributed to the improvement of existing web services, as
+          well as spearheaded efforts in creating applications and practices
           that were resposible for increasing organizational productivity.
         </p>
         <p>

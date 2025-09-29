@@ -1,0 +1,46 @@
+.terminal-prompt {
+  display: flex;
+  align-items: baseline;
+}
+
+@media (max-width: 768px) {
+  .terminal-prompt {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.normalwrap {
+  white-space: normal;
+}
+
+.blinking-caret {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  animation: blink 0.75s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    background: #fc8a68;
+    color: inherit;
+  }
+}
+
+input {
+  appearance: transparent;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+  color: transparent;
+  background: transparent;
+}
+
+input::selection {
+  background-color: transparent;
+}

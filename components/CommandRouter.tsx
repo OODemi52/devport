@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Whoami,
   Whois,
@@ -13,7 +12,6 @@ import {
   Banner,
   NotFound,
 } from "./commands";
-
 const CommandRouter: React.FC<{ command: string; historyArray: string[] }> = ({
   command,
   historyArray,

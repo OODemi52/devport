@@ -6,7 +6,7 @@ const NotFound: React.FC<{ command: string }> = ({ command }) => {
       <br />
       <div>
         wsh: command not found: {command}. For a list of commands, type{" "}
-        <span className="command">&apos;help&apos;</span>.
+        <span className="command">'help'</span>.
       </div>
       <br />
     </>

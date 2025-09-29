@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Education.css";
 
 const Education: React.FC = () => {
   return (
@@ -13,12 +12,7 @@ const Education: React.FC = () => {
           with Graduate Certificate in Artificial Intelligence
         </em>
         <br />
-        <a
-          className="info"
-          href="https://www.gwu.edu"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a className="info" href="https://www.gwu.edu" target="_blank">
           The George Washington University
         </a>{" "}
         | 2022 - 2024
@@ -30,12 +24,7 @@ const Education: React.FC = () => {
           Mechanical Engineering
           <br />
         </em>
-        <a
-          className="info"
-          href="https://umbc.edu"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <a className="info" href="https://umbc.edu" target="_blank">
           University of Marylnad - Baltimore County
         </a>{" "}
         | 2016 - 2020
