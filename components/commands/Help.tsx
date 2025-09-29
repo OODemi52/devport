@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import "../styles/Help.css";
 
 const Help: React.FC = () => {

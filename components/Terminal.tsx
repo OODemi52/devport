@@ -9,8 +9,9 @@ const Terminal: React.FC = () => {
   const [promptHistory, setPromptHistory] = useState<
     { command: string; output: React.ReactNode }[]
   >([]);
-  const [initialBannerRender, setInitialBannerRender] =
-    useState<React.ReactNode>([<Banner />]);
+  const [initialBannerRender, setInitialBannerRender] = useState<
+    React.ReactNode[]
+  >([<Banner />]);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [globalHistory, setGlobalHistory] = useState<string[]>([]);
@@ -61,7 +62,9 @@ const Terminal: React.FC = () => {
 
   return (
     <div className="terminal-container">
-      {initialBannerRender}
+      {initialBannerRender.map((node, index) => (
+        <React.Fragment key={index}>{node}</React.Fragment>
+      ))}
       {promptHistory.map((prompt, index) => (
         <div key={index}>
           <span className="prompt">

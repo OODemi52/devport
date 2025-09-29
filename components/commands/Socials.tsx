@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 const Socials: React.FC = () => {
   const socials = {
     LinkedIn: "https://www.linkedin.com/in/demi-daniel-akanle/",

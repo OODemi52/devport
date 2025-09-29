@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, RefObject } from "react";
-import "./styles/TerminalPrompt.css";
+import { useState, useEffect, RefObject } from "react";
 
 interface CommandHistoryItem {
   command: string;

@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 const NotFound: React.FC<{ command: string }> = ({ command }) => {
   return (
     <>
