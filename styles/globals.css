@@ -135,15 +135,25 @@ li {
 
 .blinking-caret {
   display: inline-block;
-  background: transparent;
-  color: #fff;
+  min-width: 0.6ch;
+  height: 1.15em;
+  line-height: 1.15em;
+  background: #fc8a68;
+  color: inherit;
   text-align: center;
-  animation: blink 0.75s step-start infinite;
+  animation: blink 0.9s steps(1, end) infinite;
+  vertical-align: text-bottom;
 }
 
 @keyframes blink {
-  50% {
+  0%,
+  49% {
     background: #fc8a68;
+    color: #2b2031;
+  }
+  50%,
+  100% {
+    background: transparent;
     color: inherit;
   }
 }

@@ -29,6 +29,13 @@ const TerminalPrompt: React.FC<TerminalPromptProps> = ({
     setHistoryIndex(null);
   }, [commandHistory]);
 
+  useEffect(() => {
+    if (!inputRef.current) return;
+
+    const safePos = Math.min(caretPos, inputText.length);
+    inputRef.current.setSelectionRange(safePos, safePos);
+  }, [caretPos, inputText, inputRef]);
+
   const updateCaret = () => {
     if (inputRef.current) {
       setCaretPos(inputRef.current.selectionStart ?? 0);
@@ -92,10 +99,12 @@ const TerminalPrompt: React.FC<TerminalPromptProps> = ({
 
     if (key === "ArrowLeft") {
       setCaretPos((pos) => Math.max(0, pos - 1));
+      event.preventDefault();
       return;
     }
     if (key === "ArrowRight") {
       setCaretPos((pos) => Math.min(inputText.length, pos + 1));
+      event.preventDefault();
       return;
     }
   };
